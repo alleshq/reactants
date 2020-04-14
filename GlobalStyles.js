@@ -11,6 +11,7 @@ export default () => (
 		.page {
 			height: 100%;
 			margin: 0;
+			font-family: Rubik;
 		}
 
 		a {
