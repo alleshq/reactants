@@ -16,11 +16,6 @@
 		"url": "https://github.com/alleshq/reactants/issues"
 	},
 	"homepage": "https://github.com/alleshq/reactants#readme",
-	"dependencies": {
-		"axios": "^0.19.2",
-		"next": "^9.3.4",
-		"next-cookies": "^2.0.3"
-	},
 	"devDependencies": {
 		"prettier": "^2.0.4"
 	}
