@@ -1,6 +1,6 @@
-const theme = require("./theme");
+import theme from "./theme";
 
-module.exports = ({secondary, wide, ...props}) => (
+export default ({secondary, wide, ...props}) => (
 	<>
 		<button {...props} />
 		<style jsx>{`

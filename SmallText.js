@@ -1,6 +1,6 @@
-const theme = require("./theme");
+import theme from "./theme";
 
-module.exports = props => (
+export default props => (
 	<>
 		<p>{props.children}</p>
 		<style jsx>{`

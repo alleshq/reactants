@@ -1,7 +1,7 @@
-const nextCookie = require("next-cookies");
-const axios = require("axios");
+import nextCookie from "next-cookies";
+import axios from "axios";
 
-module.exports = (WrappedComponent, apiUrl, allowGuest) => {
+export default (WrappedComponent, apiUrl, allowGuest) => {
 	const Wrapper = props => {
 		if (props.user || allowGuest) {
 			return <WrappedComponent {...props} />;

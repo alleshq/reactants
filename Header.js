@@ -1,7 +1,7 @@
-const Link = require("next/link");
-const theme = require("./theme");
+import Link from "next/link";
+import theme from "./theme";
 
-module.exports = props => (
+export default props => (
 	<header>
 		<div className="headerMain">
 			<Link href="/">

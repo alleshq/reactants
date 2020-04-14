@@ -1,6 +1,6 @@
-const theme = require("./theme");
+import theme from "./theme";
 
-module.exports = ({wide, ...props}) => (
+export default ({wide, ...props}) => (
 	<>
 		<input {...props} />
 		<style jsx>{`
