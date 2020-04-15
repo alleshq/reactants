@@ -3,7 +3,7 @@ import theme from "./theme";
 export default () => (
 	<style jsx global>{`
 		@import url("https://fonts.googleapis.com/css?family=Material+Icons|Rubik:400,500,700,900&display=swap");
-		
+
 		html,
 		body,
 		body > div:first-child,
