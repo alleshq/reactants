@@ -23,9 +23,5 @@ export default () => (
 			color: ${theme.accent};
 			text-decoration: underline;
 		}
-
-		.material-icons {
-			-webkit-user-select: none;
-		}
 	`}</style>
 );
