@@ -7,6 +7,22 @@ export default props => (
 			<Link href="/">
 				<a className="home">{props.title}</a>
 			</Link>
+			{props.breadcrumbs ? (
+				props.breadcrumbs.map((segment, i) => (
+					<Fragment key={i}>
+						<span>/</span>
+						{segment.href ? (
+							<Link href={segment.href} as={segment.as}>
+								<a className="bc">{segment.name}</a>
+							</Link>
+						) : (
+							<a className="bc">{segment.name}</a>
+						)}
+					</Fragment>
+				))
+			) : (
+				<></>
+			)}
 		</div>
 
 		{props.userId ? (
@@ -40,10 +56,24 @@ export default props => (
 				text-decoration: none;
 				padding: 0 10px;
 				margin: auto 5px;
+				font-weight: 700;
 			}
 
-			a.home {
-				font-weight: 700;
+			.headerMain span {
+				color: ${theme.grey8};
+				font-size: 15px;
+				margin: auto 0;
+				cursor: default;
+			}
+
+			.headerMain a.bc {
+				color: ${theme.grey4};
+				margin: auto 15px;
+				font-size: 15px;
+			}
+
+			.headerMain a.bc:not([href]) {
+				cursor: default;
 			}
 
 			a.profilePicture {
