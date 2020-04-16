@@ -1,5 +1,6 @@
 import Link from "next/link";
 import theme from "./theme";
+import {Fragment} from "react";
 
 export default props => (
 	<header>
