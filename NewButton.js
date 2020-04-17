@@ -22,9 +22,7 @@ export default () => (
 			}
 
 			div:hover {
-				color: ${theme.accent};
 				box-shadow: 0 0 50px -5px ${theme.grey8};
-				animation: colors 2s infinite;
 			}
 		`}</style>
 	</div>
