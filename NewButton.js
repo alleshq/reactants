@@ -1,8 +1,9 @@
 import theme from "./theme";
+import {Plus} from "react-feather";
 
 export default () => (
 	<div>
-		<i className="material-icons">add</i>
+		<Plus />
 		<style jsx>{`
 			div {
 				position: fixed;
