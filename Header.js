@@ -26,16 +26,16 @@ export default props => (
 			)}
 		</div>
 
-		{props.userId ? (
-			props.meHref ? (
-				<Link href={props.meHref} as={props.meAs}>
+		{props.user ? (
+			props.user.href ? (
+				<Link href={props.user.href} as={props.user.as}>
 					<a className="profilePicture">
-						<img src={`https://avatar.alles.cx/user/${props.userId}`} />
+						<img src={`https://avatar.alles.cx/user/${props.user.id}`} />
 					</a>
 				</Link>
 			) : (
 				<a href="https://alles.cx/me" className="profilePicture">
-					<img src={`https://avatar.alles.cx/user/${props.userId}`} />
+					<img src={`https://avatar.alles.cx/user/${props.user.id}`} />
 				</a>
 			)
 		) : (
