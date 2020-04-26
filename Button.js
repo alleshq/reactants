@@ -6,7 +6,6 @@ export default ({secondary, wide, ...props}) => (
 		<style jsx>{`
 			button {
 				${wide ? "width: 100%;" : ""}
-				border: none;
 				padding: 10px;
 				font-size: 1em;
 				box-sizing: border-box;
